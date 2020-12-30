@@ -42,7 +42,7 @@ LilyGo-EPD47 简易万年历显示-汉字 <br/>
 
   3.1打开文件 <br/>
 
-    C:\Users\***\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.4\variants\esp32\pins_arduino.h <br/>
+    C:\Users\***\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.4\variants\esp32\pins_arduino.h
 
   3.2找到 SDA =21,  SCL = 22, 将定义的SDA,SCL 引脚分别改成12,13 <br/>
 
