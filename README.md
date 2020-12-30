@@ -33,12 +33,12 @@ LilyGo-EPD47 简易万年历显示-汉字 <br/>
    1.8.13   <br/>
 
 2.引用库: <br/>
-    esp32 by Espressif Systems 1.04 esp32开发必备库 <br/>
-    LilyGo-EPD47 墨水屏驱动库 https://github.com/Xinyuan-LilyGO/LilyGo-EPD47
-    RTClib 1.2.1 ds3231时钟模块库 <br/>
+    2.1 esp32 by Espressif Systems 1.04 esp32开发必备库 <br/>
+    2.2 LilyGo-EPD47 墨水屏驱动库 https://github.com/Xinyuan-LilyGO/LilyGo-EPD47
+    2.3 RTClib 1.2.1 ds3231时钟模块库 <br/>
 
 3.调整i2c引脚 <br/>
-  因为lilygo-epd47 没有开放引脚21,22,必须在修改esp32的库文件将原I2C引脚进行，改成开放的引脚12,13 <br/>
+  因为lilygo-epd47 没有开放引脚21,22, 所以修改esp32的库文件将原I2C引脚改成模块开放出的引脚12,13 <br/>
 
   3.1打开文件 <br/>
 
