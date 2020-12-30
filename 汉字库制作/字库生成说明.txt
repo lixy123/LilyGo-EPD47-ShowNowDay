@@ -11,7 +11,7 @@ LvglFontTool.rar      是littlegl字库制作工具，借用此工具获得汉�
      1.准备字库文件
         从win7操作系统字体文件中直接拷出的合适字库， 建议:微软雅黑字体 msyh.ttc 
      2.准备unicode码，用于修改fontconvert.py脚本用
-        2.1 下载LvglFontTool软件，左框输入要制作的汉字，点击生成，在右框拷出批量的unicode码。 
+        2.1 下载LvglFontTool软件，运行，左框输入要制作的汉字，点击生成，在右框拷出批量的unicode码。 
         2.2 前步文字段拷到Excel，利用公式将0x4e8c, 0x4e8d等一行一行unicode数据转换成(0x4e8c,0x4e8c)等一行一行数据, 注意要排序
      3.将上步excel处理后的unicode列表(一行为一个unicode汉字)填入fontconvert.py脚本中的 intervals变量
         3.1 清空原有的 intervals变量内的内容
@@ -19,9 +19,9 @@ LvglFontTool.rar      是littlegl字库制作工具，借用此工具获得汉�
         3.2 第3行起拷入第2步的数据
      4.执行脚本fontconvert.py (需要有python运行环境，例如树莓派)
         4.1 生成脚本命令样例: 
-#run 分别制作不同点阵的字库文件
-#python3 fontconvert.py --compress msyh16 16 msyh.ttc  >hzwnn_16.h
-#python3 fontconvert.py --compress msyh24 24 msyh.ttc  >hzwnn_24.h
-#python3 fontconvert.py --compress msyh36 36 msyh.ttc  >hzwnn_36.h
-#python3 fontconvert.py --compress msyh48 48 msyh.ttc  >hzwnn_48.h
+             #run 分别制作不同点阵的字库文件
+             #python3 fontconvert.py --compress msyh16 16 msyh.ttc  >hzwnn_16.h
+             #python3 fontconvert.py --compress msyh24 24 msyh.ttc  >hzwnn_24.h
+             #python3 fontconvert.py --compress msyh36 36 msyh.ttc  >hzwnn_36.h
+             #python3 fontconvert.py --compress msyh48 48 msyh.ttc  >hzwnn_48.h
         4.2 用脚本命令生成不同字体大小的程序用到的字库    
