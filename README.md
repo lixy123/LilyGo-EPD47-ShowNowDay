@@ -50,6 +50,8 @@ LilyGo-EPD47 简易万年历显示-汉字 <br/>
 
 4.烧写固件 <br/>
   开发板选择: ESP32 Dev Module <br/>
+  
+  PSRAM: Enabled <br/>
 
   选择选择正确端口号后开始烧写固件 <br/>
 
