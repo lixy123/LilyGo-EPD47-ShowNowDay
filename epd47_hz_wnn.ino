@@ -62,8 +62,8 @@ void setup()
 {
   Serial.begin(115200);
   // disable Core 0 WDT
-  TaskHandle_t idle_0 = xTaskGetIdleTaskHandleForCPU(0);
-  esp_task_wdt_delete(idle_0);
+  //TaskHandle_t idle_0 = xTaskGetIdleTaskHandleForCPU(0);
+  //esp_task_wdt_delete(idle_0);
 
   if (! rtc.begin()) {
     Serial.println("Couldn't find RTC");
@@ -147,7 +147,7 @@ void showtime()
 
   epd_poweroff();
 
-  epd_poweroff_all();
+  //epd_poweroff_all();
 
   t2 = millis();
   printf("EPD draw took %dms.\n", t2 - t1);
