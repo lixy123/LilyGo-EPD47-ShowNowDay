@@ -146,7 +146,7 @@ void showtime()
   writeln((GFXfont *)&msyh64, (char *)week_str.c_str(), &cursor_x, &cursor_y, NULL);
 
   epd_poweroff();
-
+  //不要调用，否则ds3231无法供电计时
   //epd_poweroff_all();
 
   t2 = millis();
