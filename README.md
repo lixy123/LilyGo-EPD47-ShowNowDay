@@ -10,8 +10,8 @@ LilyGo-EPD47 简易万年历显示-汉字 <br/>
    注:实际使用后,发现电流达不到1ma,实际是80ma, 如果要达到1ma,需要在休眠前调用epd_poweroff_all, 但是如果调用epd_poweroff_all后, esp32会断开全部引脚的供电, 待唤醒后时钟模块会清零. ds3231可以不供电的, 我不太了解原因, 可能是esp32休眠导致了ds3231短路清零导致吧.如有高手, 可以给我指点下.<br/>
    
    所以虽然使用了ESP32休眠,并达到一定程度的省电, 但此程序更适合有充足电量供应的场景. <br/>
-     
-
+    
+ <img src= 'https://github.com/lixy123/LilyGo-EPD47-ShowNowDay/blob/main/ink_day.jpg?raw=true' />
 <b>二.硬件：</b>  <br/>
 1.lilygo-epd47 墨水屏(内置esp32)
 
